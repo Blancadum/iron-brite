@@ -2,6 +2,10 @@ require('dotenv').config();
 const express = require('express');
 const logger = require('morgan');
 
+/*DB init*/
+const dbConfig = require('./config/db.config');
+console.log(dbConfig.MONGODB_URI);
+
 const app = express();
 
 /* Middlewares */
